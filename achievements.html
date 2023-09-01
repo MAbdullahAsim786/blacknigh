@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+      <style>
+         *{
+            padding: 0;
+            margin: 0;
+        }
+        .darkmode{
+        background-color: black;
+        color: silver;
+        transition:0.4s ease-in-out;
+      }
+        .wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        }
+        
+        .navbar{
+            background-color:#b6b4b491;
+            border:1px ridge silver;
+            height:auto;
+            width: 100%;
+        }
+        #navbarNavAltMarkup{
+            margin-left:180px;
+            margin-top: 0;
+        }
+        .nav-link{
+          color: #383827 !important;
+            padding:20px !important;
+            font-weight:400 !important;
+        }
+        .nav-link:hover{
+            padding-left:40px !important;
+            text-decoration: underline #383827 !important;
+            color: #112525 !important;
+            text-shadow:0 0 5px #383827 !important; 
+        }
+        .navbar-brand{
+          color: #383827 !important;
+          text-shadow:0 0 6px #787978;
+          margin-top: 0px; 
+        }
+        #logoH{
+          margin-top: 0px;
+          font-size: 50px !important;
+          font-weight:700;
+        }
+        #logoP{
+          color: #112525 !important;
+          margin-bottom: 0px;
+          font-size:25px;
+        }
+        .signin{
+          background-color:silver;
+            width:auto;
+            height: auto;
+            border:1px white;
+            border-radius: 20%;
+            margin-right:100px;
+            font-weight: 700;
+            padding:8px;
+            box-shadow: #383827 0 6px 10px;
+            margin-left: 100px;
+            transition: 0.4s ease-in-out;
+        }
+        .signin:hover{
+          background-color:#383827;
+        }
+        a{
+          text-decoration: none !important;
+          color:white !important;
+        }
+        /* navbar styling end */
+        .ach{
+          width: 100%;
+          height: auto;   
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;  
+        }
+        .text{
+          background-color: #b6b4b45b;
+          height:auto;
+          border:silver solid 1px;
+          
+        }
+        .img{
+          background-color: #b6b4b45b;
+          height:auto;
+          border:1px silver solid;
+         
+        }
+        @media  (max-width:360px){
+          .img{
+            width:200px;
+          }
+          .img1{
+            margin-left: 0px;
+          }
+          #ach-H{
+            padding:0;
+            padding-left: 0px;
+          }
+          #ach-p{
+            padding:0;
+            padding-left: 0px;
+            font-size: small;
+          }
+          .img{
+            width: 100%;
+          }
+         
+        }
+        @media (max-width:415px){
+          #logoH
+          {
+            font-size:20px !important;
+            font-weight:400px !important
+            ;
+          }
+           #logoP{
+            font-size:10px !important;
+            font-weight:400px !important
+            ;
+          }
+           
+        }
+        @media (max-width:275px){
+            body{
+              font-size:6px;
+            }
+            #img1{
+            margin: 10px;
+            width: 100px;
+        }
+          }
+          .Np-img{
+            width: 350px;
+          }
+          .Mp-img{
+            width: 250px;
+          }
+        #img1{
+          margin:20px;
+          margin-top: 100px;
+          width: 200px;
+        }
+
+        .ffooter{
+          width:100%;
+          background-color:silver !important;
+        }
+        .H-book{
+          width:100%;
+          height:auto;
+          padding-bottom: 10px;
+          padding-top: 20px;
+          background-color:#b6b4b45b;
+        }
+        .h1-book{
+          color: #112525;
+          text-align: center;
+          text-shadow:0 0 5px #383827 !important;
+         }
+        #ach-H{
+          color: #383827;
+          text-shadow: 0 0 15px #787978;
+          padding-top:40px;
+          padding-left:40px;
+        }
+        #ach-p{
+          padding: 60px;
+          padding-top: 0;
+          text-shadow: 0 0 1px #383827;
+          font-size: larger;
+        }
+
+      </style>   
+</head>
+
+    <body>
+      <div class="wrapper col-lg-12 col-md-10 col-sm-10 col-9">
+         <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid ">
+          <a class="navbar-brand" href="#"><h1 id="logoH"><span style="color: #112525;"> B</span>io<span style="color: #112525;">G</span>raphy</h1><p id="logoP">Albert Einstein</p></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              <a class="nav-link active" href="C:\Users\user\Desktop\Baba">About</a>
+              <a class="nav-link active" href="achievements.html">Achievements</a>
+              <a class="nav-link active" href="book.html">Books</a>
+              <a class="nav-link active" href="awards&honors.html">Awards & Honors</a>
+            </div>
+            <button class="signin" onclick="myfunction()"><img src="Images/dark mode icon.png" alt="" width="30px"></button>
+          </div> 
+        </div>
+      </nav>
+      <div class="H-book col-lg-12 col-md-10 col-sm-10 col-10"><h1 class="h1-book">MAJOR ACHIVEMENTS OF ALBERT EINSTEIN</h1></div>
+      <div class="ach">
+        <div class="text col-lg-8 col-md-8 col-sm-12 col-12" >
+          <h1 id="ach-H">NO:1 HE PROVIDED EMPIRICAL EVIDENCE FOR THE ATOMIC THEORY :</h1>
+          <br>
+          <p id="ach-p">In 1827, Robert Brown observed pollen grains in water through a microscope and found that they moved through water <br>
+        but was not able to determine the mechanisms that caused this motion. In 1905, Albert Einstein published a paper <br>
+        on this random motion of particles in a fluid, known as Brownian motion. Einstein explained in precise detail how <br>
+        the motion that Brown had observed was a result of the pollen being moved by individual water molecules. Though <br>
+        atoms and molecules had long been theorized by scientists, Einstein’s explanation of Brownian motion served as <br>
+         definitive confirmation that atoms and molecules actually exist.</p>
+        </div>
+        <div class="img col-lg-4 col-md-4 col-sm-12 col-12">
+          <img id="img1" src="Images/Robert-Brown-who-first-observed-Brownian-motion.webp" alt="" height="280px">
+        </div>
+      </div>
+      
+      <div class="ach">
+        <div class="text col-lg-8 col-md-8 col-sm-12 col-12">
+          <h1 id="ach-H">NO:2 HE ENABLED THE DETERMINATION OF AVOGADRO’S NUMBER:</h1>
+          <br>
+          <p id="ach-p">During his explanation of Brownian motion, Einstein determined the size of atoms, 
+             and how many atoms there are in a mole. He enabled the experimental determination of Avogadro’s 
+              number and therefore the size of molecules. Einstein’s statistical discussion of atomic behavior 
+               gave experimentalists a way to count atoms by looking through an ordinary microscope.</p>
+        </div>
+        <div class="img col-lg-4 col-md-4 col-sm-12 col-12">
+          <img id="img1" src="Images/A-Diagram-explaining-Brownian-Motion.webp" alt="">
+        </div>
+      </div>
+
+      <div class="ach">
+        <div class="text col-lg-8 col-md-8 col-sm-12 col-12">
+          <h1 id="ach-H">NO:3 HE SOLVED THE RIDDLE OF THE PHOTOELECTRIC EFFECT:</h1>
+          <br>
+          <p id="ach-p">Photoelectric Effect is the emissions of electrons from a metal when light shines on it.
+                 Scientists were puzzled with this effect as it couldn’t be explained with Maxwell’s wave theory of light.
+                In his revolutionary paper, released on June 9, 1905, Einstein challenged the wave theory of light and 
+                suggested that light could also be regarded as a collection of discrete energy packets (photons).
+                Initially Einstein’s particle theory of light was universally rejected by physicists until it 
+                was experimentally verified by Robert A. Millikan about a decade later. Einstein’s discovery was 
+                pivotal in establishing the field of quantum mechanics. Quantum mechanics in turn explained many 
+                features of our universe and is used a great deal in modern technological inventions.</p>
+        </div>
+        <div class="img col-lg-4 col-md-4 col-sm-12 col-12">
+          <img id="img1" src="Images/ptE.png" alt="">
+        </div>
+      </div>
+
+      <div class="ach">
+        <div class="text col-lg-8 col-md-8 col-sm-12 col-12">
+          <h1 id="ach-H">NO:4 HIS DEBATES WITH BOHR BROUGHT QUANTUM MECHANICS IN FOCUS:</h1>
+                                </h1>
+          <br>
+          <p id="ach-p">Albert Einstein and Niels Bohr were involved in a series of public debates about quantum  <br>
+                                mechanics. These debates are remembered as they are considered important to the philosophy of science. <br>
+                                 They not only represented one of the highest points of scientific research in the first half of the <br>
+                                 twentieth century but they also brought to focus an element of quantum theory, namely quantum non-locality, <br>
+                                 which is absolutely essential in our modern understanding of the physical world.</p>
+        </div>
+        <div class="img col-lg-4 col-md-4 col-sm-12 col-12">
+          <img id="img1" src="Images/Niels-Bohr-with-Albert-Einstein.webp" alt="">
+        </div>
+      </div>
+
+      <div class="ach">
+        <div class="text col-lg-8 col-md-8 col-sm-12 col-12">
+          <h1 id="ach-H">NO:5 HE CAME UP WITH THE CONCEPT OF REST ENERGY THROUGH HIS FAMOUS EQUATION:</h1>
+          <br>
+          <p id="ach-p">In relation to his theory of special relativity, Albert Einstein predicted 
+                         the equivalence of mass (m) and energy (E) through his famous mass–energy equivalence 
+                        formula E=mc2, where c is the speed of light in vacuum. This was of paramount importance 
+                        because it showed that a particle possesses an energy called the “rest energy”, distinct 
+                        from its classical kinetic and potential energies. It implied that gravity had the ability 
+                         to bend light and could be used to calculate the amount of energy released or consumed during 
+                        nuclear reactions.</p>
+        </div>
+        <div class="img col-lg-4 col-md-4 col-sm-12 col-12">
+          <img id="img1"class="img-5" src="Images/emc2-Albert-Einstein-1905.webp" alt="">
+        </div>
+      </div>
+      <div class="ffooter">
+        <!-- Footer -->
+       <footer class="text-center text-lg-start bg-light text-muted">
+         <!-- Section: Social media -->
+         <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+           <!-- Left -->
+           <div class="me-5 d-none d-lg-block">
+             <span></span>
+           </div>
+           <!-- Left -->
+       
+           <!-- Right -->
+           <div>
+             <a href="" class="me-4 text-reset">
+               <i class="fab fa-facebook-f"></i>
+             </a>
+             <a href="" class="me-4 text-reset">
+               <i class="fab fa-twitter"></i>
+             </a>
+             <a href="" class="me-4 text-reset">
+               <i class="fab fa-google"></i>
+             </a>
+             <a href="" class="me-4 text-reset">
+               <i class="fab fa-instagram"></i>
+             </a>
+             <a href="" class="me-4 text-reset">
+               <i class="fab fa-linkedin"></i>
+             </a>
+             <a href="" class="me-4 text-reset">
+               <i class="fab fa-github"></i>
+             </a>
+           </div>
+           <!-- Right -->
+         </section>
+         <!-- Section: Social media -->
+       
+         <!-- Section: Links  -->
+         <section class="">
+           <div class="container text-center text-md-start mt-5">
+             <!-- Grid row -->
+             <div class="row mt-3">
+               <!-- Grid column -->
+               <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                 <!-- Content -->
+                 <h6 class="text-uppercase fw-bold mb-4">
+                   <i class="fas fa-gem me-3"></i>Company name
+                 </h6>
+                 <p>
+                   <a class="navbar-brand" href="#"><h1 id="logoH"><span style="color: #112525;"> B</span>io<span style="color: #112525;">G</span>raphy</h1><p id="logoP">Albert Einstein</p></a>
+                 </p>
+               </div>
+               <!-- Grid column -->
+       
+               <!-- Grid column -->
+               <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                 <!-- Links -->
+                 <h6 class="text-uppercase fw-bold mb-4">
+                   LINKS
+                 </h6>
+                 <p>
+                   <a href="index.html" class="text-reset">HOME</a>
+                 </p>
+                 <p>
+                   <a href="about.html" class="text-reset">ABOUT</a>
+                 </p>
+                 <p>
+                   <a href="achievements.html" class="text-reset">ACIVEMENTS</a>
+                 </p>
+                 <p>
+                   <a href="book.html" class="text-reset">BOOKS</a>
+                 </p>
+                 <p>
+                   <a href="awards&honors.html" class="text-reset">Awards & Honors</a>
+                 </p>
+               </div>
+               <!-- Grid column -->
+       
+               <!-- Grid column -->
+               
+       
+               <!-- Grid column -->
+               <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                 <!-- Links -->
+                 <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                 <p><i class="fas fa-home me-3"></i> KARACHI, PK</p>
+                 <p>
+                   <i class="fas fa-envelope me-3"></i>
+                   BioGraphy@gmail.com
+                 </p>
+                 <p><i class="fas fa-phone me-3"></i> + 01 234 567 88'</p>
+                 <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+               </div>
+               <!-- Grid column -->
+             </div>
+             <!-- Grid row -->
+           </div>
+         </section>
+         <!-- Section: Links  -->
+       
+         <!-- Copyright -->
+         <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+           © 2021 Copyright:
+           <a class="text-reset fw-bold" href="index.html">BioGraphy.com</a>
+         </div>
+         <!-- Copyright -->
+       </footer>
+       <!-- Footer -->
+       </div>
+
+
+
+      </div>
+ 
+<script>
+  function myfunction(){
+    let element = document.body;
+    element.classList.toggle('darkmode')
+  }
+</script>
+      
+         
+
+          
+
+
+</body>
+</html>

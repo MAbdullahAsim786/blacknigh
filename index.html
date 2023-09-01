@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+      *{
+        padding: 0;
+        margin: 0;
+      }
+      .darkmode{
+        background-color: black;
+        color: silver;
+        transition:0.4s ease-in-out;
+      }
+
+      .wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+        .navbar{
+            background-color:#b6b4b491;
+            border:1px ridge silver;
+            height:auto;
+            width:100%;
+        }
+        #navbarNavAltMarkup{
+            margin-left:180px;
+            margin-top: 0;
+        }
+        .nav-link{
+          color: #383827 !important;
+            padding:20px !important;
+            font-weight:400 !important;
+        }
+        .nav-link:hover{
+            padding-left:30px !important;
+            padding-right: 10px !important;
+            text-decoration: underline #383827 !important;
+            color: #112525 !important;
+            text-shadow:0 0 5px #383827 !important; 
+            transition: 0.4s ease-in-out;
+        }
+        .navbar-brand{
+          color: #383827 !important;
+          text-shadow:0 0 6px #787978;
+          margin-top: 0px; 
+        }
+        #logoH{
+          margin-top: 0px;
+          font-size: 50px !important;
+          font-weight:700;
+        }
+        #logoP{
+          color: #112525 !important;
+          margin-bottom: 0px;
+          font-size:25px;
+        }
+        .signin{
+            background-color:silver;
+            width:auto;
+            height: auto;
+            border:1px white;
+            border-radius: 20%;
+            margin-right:100px;
+            font-weight: 700;
+            padding:8px;
+            box-shadow: #383827 0 6px 10px;
+            margin-left: 100px;
+            transition: 0.4s ease-in-out;
+        }
+        .signin:hover{
+          background-color:#383827;
+        }
+        a{
+          text-decoration: none !important;
+          color:white !important;
+        }
+        /* navbar styling end */
+        .banner{
+          width:100%;
+          height: auto;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          background-color: #b6b4b45b;
+        }
+        .nameH{
+          
+          height:auto;
+          flex-wrap: wrap;
+          justify-content:space-between;
+          flex:1;
+          /* border: 1px black ridge; */
+        }
+        #nameH1{
+          color: #112525;
+          font-weight:700;
+          padding-top:60px;
+          padding-left:40px;
+          font-size:auto;
+          text-shadow:0 0 6px #787978;
+        }
+        #nameH2{
+         color: #787978;
+         padding-left: 40px;
+         text-shadow: #383827 0 0 5px;
+        }      
+        .btnA-more{
+          background-color: #383827;
+          border-radius:10%;
+          width:auto;
+          padding: 2px;
+          margin-left: 20px;
+          box-shadow:#787978 0 8px 10px;
+          margin-left: 100px;
+          transition:0.4s ease-in-out;
+        }     
+        .btnA-more:hover{
+          background-color: #787978;
+        }
+        #Al-Btn{
+          color: whitesmoke !important;
+          font-weight:bold;
+        }
+        .img1{
+          flex-wrap: wrap;
+          width: auto;
+          height:auto;
+        }
+        /* Accordion css */
+        .Q-portion{
+          width: 100%;
+          display:flex;
+          flex-wrap: wrap;
+          justify-content: space-around;
+         background-color: #b6b4b491;
+        }
+        .F-Question{
+          flex:2;
+          border: 1px silver ridge;
+          height:auto;
+          padding: 50px;
+          padding-top:100px;
+          background-color: #b6b4b491;
+          flex-wrap: wrap;
+          justify-content: space-around;
+        }
+        #Tques-H{
+          display: flex;
+          flex-wrap: wrap;
+          color: #112525;
+          font-weight: bold !important;
+          font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        #space{
+          color: #112525;
+          font-weight:900 !important;
+        }
+        .accordion{
+          margin-top: 30px;
+        }
+        .accordion-button{
+          background-color:#38382796!important;
+          border:1px silver ridge !important;
+        }
+        .accordion-button:hover{
+          background-color:#383827 !important;
+          color: white;
+        }
+        .accordion-button:focus{
+          background-color: #383827 !important;
+          color: white !important;
+          border:white !important;
+        }
+
+        .section{
+          padding-top: 20px;
+          flex:auto;
+          height:auto;
+          border: 1px silver solid;
+          background-color: #b6b4b491;
+        }
+        #albertimg2{
+          width: auto;
+          margin:25px;
+        }
+        .R-contentL{
+          padding:10px;
+        }
+        .A-Ltext{
+          padding-left:60px;
+          padding-top:30px;
+          height:auto;
+          width:100%;
+        }
+        footer{
+          background-color: silver;
+        }
+        .ffooter{
+          width:100%;
+          background-color:silver !important;
+        }
+        @media (max-width:817px){
+          .f-img{
+            width:200px;
+            padding-top:100px;
+            padding-left: 50px;
+          }
+        }
+        @media (max-width:314px){
+          #logoH
+          {
+            font-size:20px !important;
+            font-weight:400px !important
+            ;
+          }
+           #logoP{
+            font-size:20px !important;
+            font-weight:400px !important
+            ;
+          }
+          .f-img{
+            width: 150px;
+          }
+          #albertimg2{
+            width: 130px;
+          }
+          .A-Ltext{
+            padding-left: 10px;
+          }
+          .btnA-more{
+            margin-left: 10px;
+          }
+        }
+        @media (max-width:415px){
+          #logoH
+          {
+            font-size:20px !important;
+            font-weight:400px !important
+            ;
+          }
+           #logoP{
+            font-size:10px !important;
+            font-weight:400px !important
+            ;
+          }
+          #albertimg2{
+            width: 130px;
+          }
+
+        }
+          
+       
+        @media (max-width:378px){
+          .f-img{
+            padding-top: 10px;
+          }
+          .A-Ltext{
+            padding-left:10px;
+            width:auto;
+          }
+          .btnA-more{
+            margin-left: 10px;
+          }
+        #f-text{
+          font-size:6px;
+        }
+        }
+        
+        
+        
+        
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div class="wrapper col-lg-12 col-md-10 col-sm-10 col-9 ">
+    <nav class="navbar navbar-expand-lg">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"><h1 id="logoH"><span style="color: #112525;"> B</span>io<span style="color: #112525;">G</span>raphy</h1><p id="logoP">Albert Einstein</p></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+        <a class="nav-link active" href="about.html">About</a>
+        <a class="nav-link active" href="achievements.html">Achievements</a>
+        <a class="nav-link active" href="book.html">Books</a>
+        <a class="nav-link active" href="awards&honors.html">Awards & Honors</a>
+        <button class="signin" onclick="myfunction()"><img src="Images/dark mode icon.png" alt="" width="30px"></button>
+      </div>
+    </div> 
+  </div>
+</nav>
+
+<div class="banner">
+<div class="nameH">
+  <h1 id="nameH1">ALBERT EINSTEIN</h1>
+  <H2 id="nameH2">[German-American Physicist]</H2><br>
+  <div class="A-Ltext">
+    <p id="f-text" style="padding: 10px;text-shadow: 0 0 1px #383827;"><b> Albert Einstein </b>, (born March 14, 1879, Ulm, Württemberg, Germany—died April 18, 1955,
+     Princeton, New Jersey, U.S.), German-born physicist who developed the special and general 
+     theories of relativity and won the Nobel Prize for Physics in 1921 for his explanation of the 
+     photoelectric effect. Einstein is generally considered the most influential physicist of the 20th century.</p>
+  </div>
+  <button class="btnA-more">
+    <a href="about.html" id="Al-Btn">About more..</a>
+  </button> 
+</div>
+<div class="img1">
+  <img src="Images/alber3.jpg" alt="" class="f-img">
+</div>
+</div>
+
+
+
+
+
+
+<div class="F-Question col-lg-8 col-md-12 col-sm-12 col-12">
+<h3 id="Tques-H">Top Questions <span id="space" style="color:#383827">  ____</span></h3>
+
+<div class="accordion accordion-flush" id="accordionFlushExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingOne">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+        What did Albert Einstein do?
+      </button>
+    </h2>
+    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">
+        Albert Einstein was a famous physicist. His research spanned from quantum mechanics to theories
+       about gravity and motion. After publishing some groundbreaking papers, Einstein toured the world and gave speeches about his discoveries.
+       In 1921 he won the Nobel Prize for Physics for his discovery of the photoelectric effect.</div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingTwo">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+        What is Albert Einstein known for?
+      </button>
+    </h2>
+    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">Albert Einstein is best known for his equation E = mc2, which states that energy
+       and mass (matter) are the same thing, just in different forms. He is also known for his discovery of the photoelectric effect, for which he won the Nobel Prize for Physics in 1921. Einstein developed a theory of special and general relativity, which helped to complicate 
+        and expand upon theories that had been put forth by Isaac Newton over 200 years prior. </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingThree">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+        What infuence Elbert Einstein have on Science ?
+      </button>
+    </h2>
+    <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">Albert Einstein had a massive influence on contemporary physics. 
+        His theory of relativity shifted contemporary understanding of space completely. Along with
+         his equation E = mc2, it also foreshadowed the creation of the atomic bomb. Einstein’s 
+         understanding of light as something which can function both as a wave and as a 
+        stream of particles became the basis for what is known today as quantum mechanics.</div>
+    </div>
+  </div>
+  
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingFour">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+        What was Albert Einstein's family like ?
+      </button>
+    </h2>
+    <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">Albert Einstein was raised in a secular Jewish family and had one sister,
+         Maja, who was two years younger than him. In 1903 Einstein married Milena Maric, a Serbian physics student
+         whom he had met at school in Zürich. They had three children: a daughter, named Lieserl, and two sons,
+         named Hans and Eduard. After a period of unrest, Einstein and Maric divorced in 1919. Einstein, during his marriage, had begun an affair with his 
+        cousin Elsa Löwenthal. They were married in 1919, the same year he divorced Maric.</div>
+    </div>
+  </div>
+  
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingFive">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+        How did Albert Einstein die ?
+      </button>
+    </h2>
+    <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">After suffering an abdominal aortic aneurysm rupture several days before, Albert Einstein died on April 18, 1955, at age 76.</div>
+    </div>
+  </div>
+  
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingSix">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+        What did Albert Einstein mean when he wrote that God "does not play dice" ?
+      </button>
+    </h2>
+    <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">In December 1926 Albert Einstein wrote to Max Born that “[t]he theory produces a
+         good deal but hardly brings us closer to the secret of the Old One. I am at all events convinced that He does not play dice.” 
+         Einstein was reacting to Born’s probabilistic interpretation of quantum mechanics and expressing a deterministic view of the world.</div>
+    </div>
+  </div>
+</div>
+</div>
+<div class="section  col-lg-4 col-md-12 col-sm-12 col-12 ">
+  <img src="Images/Albertimg2.webp" alt="" id="albertimg2">
+  <br>
+  <br>
+  <hr>
+  <div class="R-contentL">
+    <br>
+     <p id="logoP">ALBERT EINSTEIN</p><p>The Nobel Prize winner in Physics 1921</p>
+      <p><b>Born : </b>(March 14, 1879)
+        <a href="#" id="S-link" style="color:#383827 !important;text-decoration:underline !important;">Ulm</a>
+          - <a href="#"id="S-link" style="color:#383827 !important;text-decoration:underline !important;">Germany</a>
+      </p>
+      <p><b>Died : </b> April 18, 1955 (aged 76)
+        <a href="#" id="S-link" style="color:#383827 !important;text-decoration:underline !important;">Princeton</a>
+        - <a href="#"id="S-link" style="color:#383827 !important;text-decoration:underline !important;">New Jersey</a>
+      </p>
+      <p>
+        <b>Awards and Honors : </b>
+        <a href="#" id="S-link" style="color:#383827 !important;text-decoration:underline !important;">Noble Prize (1921)</a>
+     -  <a href="#" id="S-link" style="color:#383827 !important;text-decoration:underline !important;">Copley Medal (1925)</a>
+        
+      </p>
+      <br>
+      <button class="btnA-more"style="margin-left:50px;"><a href="about.html" id="Al-Btn" >See All Related Content</a></button>
+      
+  </div>
+</div>
+
+<div class="ffooter">
+  <!-- Footer -->
+ <footer class="text-center text-lg-start bg-light text-muted">
+   <!-- Section: Social media -->
+   <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+     <!-- Left -->
+     <div class="me-5 d-none d-lg-block">
+       <span></span>
+     </div>
+     <!-- Left -->
+ 
+     <!-- Right -->
+     <div>
+       <a href="" class="me-4 text-reset">
+         <i class="fab fa-facebook-f"></i>
+       </a>
+       <a href="" class="me-4 text-reset">
+         <i class="fab fa-twitter"></i>
+       </a>
+       <a href="" class="me-4 text-reset">
+         <i class="fab fa-google"></i>
+       </a>
+       <a href="" class="me-4 text-reset">
+         <i class="fab fa-instagram"></i>
+       </a>
+       <a href="" class="me-4 text-reset">
+         <i class="fab fa-linkedin"></i>
+       </a>
+       <a href="" class="me-4 text-reset">
+         <i class="fab fa-github"></i>
+       </a>
+     </div>
+     <!-- Right -->
+   </section>
+   <!-- Section: Social media -->
+ 
+   <!-- Section: Links  -->
+   <section class="">
+     <div class="container text-center text-md-start mt-5">
+       <!-- Grid row -->
+       <div class="row mt-3">
+         <!-- Grid column -->
+         <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+           <!-- Content -->
+           <h6 class="text-uppercase fw-bold mb-4">
+             <i class="fas fa-gem me-3"></i>Company name
+           </h6>
+           <p>
+             <a class="navbar-brand" href="#"><h1 id="logoH"><span style="color: #112525;"> B</span>io<span style="color: #112525;">G</span>raphy</h1><p id="logoP">Albert Einstein</p></a>
+           </p>
+         </div>
+         <!-- Grid column -->
+ 
+         <!-- Grid column -->
+         <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+           <!-- Links -->
+           <h6 class="text-uppercase fw-bold mb-4">
+             LINKS
+           </h6>
+           <p>
+             <a href="index.html" class="text-reset">HOME</a>
+           </p>
+           <p>
+             <a href="about.html" class="text-reset">ABOUT</a>
+           </p>
+           <p>
+             <a href="achievements.html" class="text-reset">ACIVEMENTS</a>
+           </p>
+           <p>
+             <a href="book.html" class="text-reset">BOOKS</a>
+           </p>
+           <p>
+             <a href="awards&honors.html" class="text-reset">Awards & Honors</a>
+           </p>
+         </div>
+         <!-- Grid column -->
+ 
+         <!-- Grid column -->
+         
+ 
+         <!-- Grid column -->
+         <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+           <!-- Links -->
+           <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+           <p><i class="fas fa-home me-3"></i> KARACHI, PK</p>
+           <p>
+             <i class="fas fa-envelope me-3"></i>
+             BioGraphy@gmail.com
+           </p>
+           <p><i class="fas fa-phone me-3"></i> + 01 234 567 88'</p>
+           <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+         </div>
+         <!-- Grid column -->
+       </div>
+       <!-- Grid row -->
+     </div>
+   </section>
+   <!-- Section: Links  -->
+ 
+   <!-- Copyright -->
+   <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+     © 2021 Copyright:
+     <a class="text-reset fw-bold" href="index.html">BioGraphy.com</a>
+   </div>
+   <!-- Copyright -->
+ </footer>
+ <!-- Footer -->
+ </div></div>
+<script>
+  function myfunction(){
+    let element = document.body;
+    element.classList.toggle('darkmode')
+  }
+</script>
+</body>
+
+</html>
